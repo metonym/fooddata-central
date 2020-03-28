@@ -46,5 +46,5 @@ import Client from "fooddata-central";
 
 [npm]: https://img.shields.io/npm/v/fooddata-central.svg?color=blue
 [npm-url]: https://npmjs.com/package/fooddata-central
-[build]: https://travis-ci.com/ibm/fooddata-central.svg?branch=master
-[build-badge]: https://travis-ci.com/ibm/fooddata-central
+[build]: https://travis-ci.com/metonym/fooddata-central.svg?branch=master
+[build-badge]: https://travis-ci.com/metonym/fooddata-central
