@@ -1,0 +1,36 @@
+{
+  "name": "fooddata-central",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Node.js client and API types for USDA FoodData Central",
+  "author": "Eric Liu (https://github.com/metonym)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "develop": "tsnd --respawn src",
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.5",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metonym/fooddata-central.git"
+  },
+  "homepage": "https://github.com/metonym/fooddata-central",
+  "keywords": [
+    "food data central",
+    "usda fdc",
+    "fdc"
+  ],
+  "files": [
+    "dist"
+  ],
+  "bugs": "https://github.com/metonym/fooddata-central/issues"
+}
