@@ -15,7 +15,7 @@ yarn add fooddata-central
 
 ## Prerequisites
 
-An API key is required to interact with the FoodData Central API. Sign-up for an [API key](https://fdc.nal.usda.gov/api-key-signup.html).
+An [API key](https://fdc.nal.usda.gov/api-key-signup.html) is required to interact with the FoodData Central API.
 
 ## Usage
 
@@ -38,6 +38,35 @@ import Client from "fooddata-central";
     }
   }
 })();
+```
+
+### API
+
+#### Search foods
+
+Search the food database using the `search` method.
+
+```ts
+client.search({
+  generalSearchInput?: string;
+  includeDataTypeList?: string | string[];
+  ingredients?: string;
+  brandOwner?: string;
+  requireAllWords?: boolean;
+  pageNumber?: number;
+  sortField?: "lowercaseDescription.keyword" | "dataType.keyword" | "publishedDate" | "fdcId";
+  sortDirection?: "asc" | "desc";
+})
+```
+
+#### Retrieve food details
+
+Each food object returned from the `search` endpoint contains a unique `fdcId`.
+
+Pass the `fdcId` value to the `details` method to retrieve the nutrient profile of the item.
+
+```ts
+client.details(fdcId: number)
 ```
 
 ## License
